@@ -4,20 +4,15 @@ import { Request, Response } from "express";
 
 const { env } = process;
 
-/*
- * If creating an event function, it is recommended to create an
- * interface for the type of event. The example below is a basic
- * (incomplete) interface for pub/sub functions
- */
-interface IPubSubEvent {
-    data: string;
-}
+// TODO: create event interfaces for different event types
+// tslint:disable-next-line: no-empty-interface
+interface IEvent {}
 
 async function httpTemplate(req: Request, res: Response): Promise<any> {
     // ... Insert body here
 }
 
-async function eventTemplate(event: IPubSubEvent, ctx: Context): Promise<any> {
+async function eventTemplate(event: IEvent, ctx: Context): Promise<any> {
     // ... Insert body here
 }
 
