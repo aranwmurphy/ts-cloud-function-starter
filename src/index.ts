@@ -9,7 +9,12 @@ const { env } = process;
 interface IEvent {}
 
 async function httpTemplate(req: Request, res: Response): Promise<any> {
-    // ... Insert body here
+    try {
+        // ... Insert body here
+        return res.status(200).json({});
+    } catch (err) {
+        // ... Handle errors here
+    }
 }
 
 async function eventTemplate(event: IEvent, ctx: Context): Promise<any> {

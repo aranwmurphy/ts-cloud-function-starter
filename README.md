@@ -16,7 +16,7 @@ It correctly bundles the project in production mode and optimizes the build for 
 
 ### `npm lint`
 
-Lints the project files
+Lints the project files.
 
 ### `npm start`
 
