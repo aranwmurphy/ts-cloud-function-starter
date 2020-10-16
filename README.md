@@ -24,7 +24,7 @@ Runs the cloud function. Refer [here](https://github.com/GoogleCloudPlatform/fun
 
 ### `npm deploy`
 
-Deploys the function to GCP, before running this script, please fill in the `config` parameters in package.json. Refer [here](https://cloud.google.com/sdk/gcloud/reference/functions/deploy#--trigger-bucket) for possible `trigger` values.
+Deploys the function to GCP, before running this script, please fill in the `config` parameters in package.json. Refer [here](https://cloud.google.com/sdk/gcloud/reference/functions/deploy#--trigger-bucket) for possible `trigger` types.
 
 ## License
 MIT
