@@ -4,21 +4,24 @@ import { Request, Response } from "express";
 
 const { env } = process;
 
-// TODO: create event interfaces for different event types
 // tslint:disable-next-line: no-empty-interface
 interface IEvent {}
 
 async function httpTemplate(req: Request, res: Response): Promise<any> {
     try {
-        // ... Insert body here
+        // ... insert body here
         return res.status(200).json({});
     } catch (err) {
-        // ... Handle errors here
+        // ... handle errors here
     }
 }
 
 async function eventTemplate(event: IEvent, ctx: Context): Promise<any> {
-    // ... Insert body here
+    try {
+        // ... insert body here
+    } catch (err) {
+        // ... handle errors here
+    }
 }
 
 exports.httpTemplate = httpTemplate;
