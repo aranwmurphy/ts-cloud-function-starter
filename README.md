@@ -1,5 +1,5 @@
 # ts-cloud-function-starter
-Google Cloud Functions starter template for TypeScript
+TypeScript Google Cloud Functions starter template
 
 ## Available Scripts
 
